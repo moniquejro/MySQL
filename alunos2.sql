@@ -1,0 +1,15 @@
+insert into alunos (nome, sobrenome, matricula, nota) values ("Monique", "Oliveira", 2020-001, 8);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Ana", "Claudia", 2020-002, 3);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Vivian", "..", 2020-003, 5);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Danilo", "..", 2020-004, 7);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Matheus", "Muller", 2020-005, 4);
+insert into alunos (nome, sobrenome, matricula, nota) values ("David", "..", 2020-006, 9);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Paulinha", "..", 2020-007, 2);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Camila", "..", 2020-008, 7);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Luana", "..", 2020-009, 1);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Natalia", "..", 2020-010, 7);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Jo", "..", 2020-011, 9);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Paula", "Larissa", 2020-012, 8);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Heitor", "..", 2020-013, 8);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Ícaro", "..", 2020-014, 4);
+insert into alunos (nome, sobrenome, matricula, nota) values ("Pacanaro", "..", 2020-015, 10);
