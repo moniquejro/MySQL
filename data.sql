@@ -1,1 +1,1 @@
-select * From funcionarios
+insert into funcionarios (nome, cpf, cel, endereco, email) values ("Maria José", "89657842587", 65874589, "Av Mario Lago", "fulano@gmail.com")
