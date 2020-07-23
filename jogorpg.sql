@@ -33,3 +33,25 @@ select * from tb_classe
 update tb_classe set nome = "Sacerdote" where id = 1
 update tb_classe set nome = "Caçadora" where id = 2
 update tb_classe set nome = "Suporte" where id = 3
+
+insert into tb_personagem (nome, life, ataque, classe_id) values ("KiMiKo", 1200, 20, 1);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("Caramelo", 2000, 30, 2);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("Pegazus", 1000, 15, 3);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("KiMiKo", 500, 10, 1);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("Caipora", 2000, 30, 2);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("Lobisomem", 2200, 45, 2);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("Ares", 5000, 55, 2);
+insert into tb_personagem (nome, life, ataque, classe_id) values ("Morfeu", 2200, 15, 2);
+
+--Populei duas vezes a tabela e resolvi deletar alguns e alterar outros
+delete from tb_personagem where id = 4
+update tb_personagem set nome = "Caruru" where id = 6
+update tb_personagem set nome = "Arapuá" where id = 11
+update tb_personagem set nome = "Pororoca" where id = 13
+update tb_personagem set nome = "Baiana" where id = 14
+update tb_personagem set nome = "Capoeira" where id = 5
+update tb_personagem set nome = "Jacarandá" where id = 12
+
+select * from tb_personagem where ataque > 20;
+select * from tb_personagem where ataque between 15 and 45;
+select * from tb_personagem where nome like  "C%"
