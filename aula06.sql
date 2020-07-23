@@ -1,28 +1,39 @@
-create database db_aula6;
+--Continuacao pela aula07
 
-use  db_aula6;
-
-create table tb_marcas(
-id bigint (5) auto_increment,
-nome varchar(20) not null,
-ativo boolean,
-primary key (id)
-);
+insert into tb_marcas (nome, ativo) values("H&M", true);
+insert into tb_marcas (nome, ativo) values ("Zara", true);
+insert into tb_marcas (nome, ativo) values ("LV", true);
+insert into tb_marcas (nome, ativo) values ("Adidas", true);
+insert into tb_marcas (nome, ativo) values ("Uniq", true);
+insert into tb_marcas (nome, ativo) values ("Hermes", true);
+insert into tb_marcas (nome, ativo) values ("Rolex", true);
+insert into tb_marcas (nome, ativo) values ("Gucci", true);
+insert into tb_marcas (nome, ativo) values ("Cartier", true);
 
 select * from tb_marcas
 
-insert into tb_marcas(nome, ativo) values ("Nike", true)
-insert into tb_marcas(nome, ativo) values ("Fatal Surf", false)
+select * from tb_marcas where nome like "%ad%"
+select * from tb_marcas where nome like "%fa%"
+select * from tb_marcas where ativo = true
 
-update tb_marcas set nome = "Fatall Surff", ativo = true 
-where id = 2;
+--unindo tabelas
+use db_aula6;
 
-select * from tb_marcas where id = 2
-select * from tb_marcas where id < 2
-select * from tb_marcas where id >= 2
-select * from tb_marcas where id <> 2
+create table tb_produtos(
+id bigint auto_increment,
+nome varchar(30) not null,
+preco decimal(10,2),
+marca_id bigint not null,
 
-select nome, ativo from tb_marcas
+primary key(id),
+foreign key (marca_id) references tb_marcas (id)
+)
 
-delete from tb_marcas where id = 1
-select * from tb_marcas
+insert into tb_produtos(nome, preco, marca_id)
+values ("Camisa", 22.99, 3)
+insert into tb_produtos(nome, preco, marca_id)
+values ("Tênis", 69.99, 3)
+
+select * from tb_produtos where nome = "tenis"
+select * from tb_produtos where preco > 20.00
+select * from tb_produtos where preco > 60.00
